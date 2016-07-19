@@ -4,7 +4,7 @@
   "type": "drupal-module",
   "license": "GPL-2.0+",
   "support": {
-    "issues": "https://drupal.org/project/navbar/chosen",
+    "issues": "https://drupal.org/project/issues/navbar",
     "source": "https://drupal.org/project/navbar"
   },
   "keywords": [
@@ -51,6 +51,7 @@
     }
   ],
   "require": {
+    "composer/installers": "^1.0.20",
     "modernizer-navbar": "dev-master",
     "backbone": "1.0.*",
     "underscore": "1.5.*"
