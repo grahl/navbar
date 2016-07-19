@@ -1,0 +1,58 @@
+{
+  "name": "drupal/navbar",
+  "description": "An alternative to admin_menu and toolbar backported to d7.",
+  "type": "drupal-module",
+  "license": "GPL-2.0+",
+  "support": {
+    "issues": "https://drupal.org/project/navbar/chosen",
+    "source": "https://drupal.org/project/navbar"
+  },
+  "keywords": [
+    "Drupal",
+    "navbar"
+  ],
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "modernizer-navbar",
+        "version": "dev-master",
+        "type": "drupal-library",
+        "source": {
+          "url": "https://github.com/BrianGilbert/modernizer-navbar",
+          "type": "git",
+          "reference": "origin/2.7.1"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "backbone",
+        "version": "1.0.0",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://github.com/jashkenas/backbone/archive/1.0.0.zip",
+          "type": "zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "underscore",
+        "version": "1.5.0",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://github.com/jashkenas/underscore/archive/1.5.0.zip",
+          "type": "zip"
+        }
+      }
+    }
+  ],
+  "require": {
+    "modernizer-navbar": "dev-master",
+    "backbone": "1.0.*",
+    "underscore": "1.5.*"
+  }
+}
